@@ -1,0 +1,48 @@
+:Syntax on --[Give the coloring of file]
+:set nu    --[Show the line numbe]
+:colorscheme [space] [press 'Ctrl + d']  --[Show color schemes from Vim session]
+:colo <color-scheme-name>  --[Try out color schemes]
+:<Any Line Number> in insert mode  --[To go specfic line number]
+:<Press $> --[To move the cursor to the end of the current line]
+:<Press 0> --[To move the cursor to the start of the current line]
+:<dw>      --[Delete the letter after the cursor before next word]
+:<dd>      --[Delete the complete line]
+:undo or type <u> --[Undo the last change]
+:redo or type <Ctrl-r> --[Undo the last change]
+:<line number>  --[Take the cursor to this typed line number]
+Ctrl+f   --[Scroll down by one full screen]
+Ctrl+b   --[Scroll up by one full screen]
+:split <file name>  or ':sp <file name>'  --[split the same window in two part in horizantally and you can switch between via `Ctrl + ww`]
+:vs <file name> --[vertically spliting] 
+
+------------------------------------------------
+1. Press CTRL+V to enter visual block mode.
+2. Move your cursor to the end of where you want to copy or cut.
+3. Press y to copy. Press d to cut.
+4. Move the cursor to where you want to paste your selection.
+5. Press P (uppercase) to paste before your cursor.
+------------------------------------------------
+
+command to select complete file in vim :"ggVG"
+
+1 => gg: Moves the cursor to the first line of the file.
+2 => V: Enters Visual Line mode, which allows you to select entire lines.
+3 => Shift+g Moves the cursor to the last line of the file.
+
+------------------------------------------------
+
+Vi Related command
+
+1. Copy a file in the current file => ':r <path to file>'
+2. Open a new buffer  		   => ':enew'  // You have to save file before moving to next buffer
+3. Go to next buffer 		   => ':bn'
+4. Go to previous buffer 	   => ':bp'
+5. Delete the buffer 		   => ':bd'
+5. Edit a file in current buffer   => ':e <file name>'
+
+Enter Cursor in Visual Mode
+
+1. Enter in visual mode   	   => 'v' // then ou can select the line
+				      'y' // this is for yanked(copy) the text
+				      'p' // paste the text  
+				
