@@ -210,3 +210,7 @@ app.add_middleware(
 Adds Cross-Origin Resource Sharing (CORS) middleware to a FastAPI app, allowing all origins, methods, and headers.
 
 
+### Clone repo with particular user-account
+```bash
+git clone https://priyanshurajput-24@github.com/priyanshurajput-24/Learning_bash.git
+```
