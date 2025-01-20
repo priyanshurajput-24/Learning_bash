@@ -1,0 +1,88 @@
+#   The serial in the file of running the commad is not optimal for every use cases 
+#   We need sometime try with a different set-up 
+
+# This is the Server configuration
+
+ubuntu@ip-172-31-10-133:~$ lsb_release -a
+No LSB modules are available.
+Distributor ID: Ubuntu
+Description:    Ubuntu 22.04.5 LTS
+Release:        22.04
+Codename:       jammy
+ubuntu@ip-172-31-10-133:~$ uname -a
+Linux ip-172-31-10-133 6.8.0-1015-aws #16~22.04.1-Ubuntu SMP Mon Aug 19 19:38:17 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
+
+
+# This is GPT reference link for envoriment set-up
+https://chatgpt.com/share/6752eef3-18ec-8001-a888-0ab7dfe5d7d2
+
+
+sudo apt update
+sudo apt install python3.10-venv
+python3 -m venv env
+source env/bin/activate
+lsb_release -a
+uname -a
+wget https://www.opendesign.com/guestfiles/get?filename=ODAFileConverter_QT6_lnxX64_8.3dll_25.11.deb
+mv get\?filename\=ODAFileConverter_QT6_lnxX64_8.3dll_25.11.deb ODAFileConverter_QT6_lnxX64_8.3dll_25.8.deb
+sudo dpkg -i ODAFileConverter_QT6_lnxX64_8.3dll_25.8.deb 
+ODAFileConverter
+sudo apt install libgl1-mesa-glx
+ldconfig -p | grep libGL.so.1
+ODAFileConverter
+sudo ln -s libxcb-util.so.1 libxcb-util.so.0
+ODAFileConverter
+sudo apt install libxkbcommon0
+sudo apt install libfontconfig1
+ODAFileConverter
+QT_QPA_PLATFORM=offscreen ODAFileConverter
+ODAFileConverter 
+QT_QPA_PLATFORM=offscreen ODAFileConverter
+python3 -m venv env
+source env/bin/activate
+vi requirements.txt
+pip3 install -r requirements.txt 
+vi api_dwg_to_pdf.py
+sudo apt update
+sudo apt install libcairo2 libcairo2-dev
+python3 api_dwg_to_pdf.py 
+sudo apt update
+sudo apt install xvfb
+python3 api_dwg_to_pdf.py 
+Xvfb :99 -screen 0 1024x768x16 &
+export DISPLAY=:99
+./ODAFileConverter_QT6_lnxX64_8.3dll_25.8.deb 
+ODAFileConverter 
+sudo apt-get update
+sudo apt-get install libxkbcommon-x11-0 libxcb-xinerama0
+python3 api_dwg_to_pdf.py 
+find / -name platforms -type d 2>/dev/null
+export QT_QPA_PLATFORM_PLUGIN_PATH=/home/ubuntu/cad_converter/env/lib/python3.10/site-packages/cv2/qt/plugins/platforms
+python3 api_dwg_to_pdf.py 
+sudo apt-get install xvfb
+xvfb-run ./ODAFileConverter
+xvfb-run ./ODAFileConverter_QT6_lnxX64_8.3dll_25.8.deb 
+sudo apt-get install qt5-default
+sudo apt-get update
+sudo apt-get install -y libx11-xcb1 libxcb-util1 libxkbcommon-x11-0 libxcb-xinerama0
+find / -name platforms -type d 2>/dev/null
+export QT_PLUGIN_PATH=/home/ubuntu/cad_converter/env/lib/python3.10/site-packages/cv2/qt/plugins/platforms
+sudo apt-get install -y xvfb
+xvfb-run ./ODAFileConverter_QT6_lnxX64_8.3dll_25.8.deb 
+sudo apt-get update
+python3 api_dwg_to_pdf.py 
+python3 api_dwg_to_pdf.py 
+unset QT_QPA_PLATFORM_PLUGIN_PATH
+python3 api_dwg_to_pdf.py 
+ODAFileConverter 
+sudo apt-get update
+sudo apt-get install -y     libx11-xcb1     libxcb1     libxcb-glx0     libxcb-shape0     libxcb-xfixes0     libxcb-shm0     libxcb-randr0     libxcb-render-util0     libxcb-render0     libxcb-xinerama0     libxcb-keysyms1     libxcb-icccm4     libxkbcommon-x11-0
+sudo apt-get install --reinstall libqt5gui5 libqt5core5a libqt5widgets5
+sudo apt-get install xvfb
+xvfb-run ./ODAFileConverter_QT6_lnxX64_8.3dll_25.8.deb 
+QT_DEBUG_PLUGINS=1 ./ODAFileConverter_QT6_lnxX64_8.3dll_25.8.deb 
+ODAFileConverter 
+c
+sudo ln -s libxcb-util.so.1 libxcb-util.so.0
+ODAFileConverter 
+sudo apt install libgl1-mesa-glx
