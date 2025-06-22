@@ -19,11 +19,11 @@ source ~/.bashrc
 ---
 * Direct get the terminal inside docker 
     ```bash
-        docker run -it <image_id> /bin/bash
+    docker run -it <image_id> /bin/bash
     ```
 
     ```bash
-        docker run -it --gpus all -p 5000:5000 <image_id> /bin/bash
+    docker run -it --gpus all -p 5000:5000 <image_id> /bin/bash
     ```
 
 ## Containers
