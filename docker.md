@@ -76,14 +76,17 @@
     1. create a repo in docker hub, Choose `public` or `private` type.
     2. For making a existing container state as an `image`.
     3. run this command `docker commit 6c08e156e117a0 ubuntu_custom:latest`.
+
         ```bash
         docker commit <container-id> <custom-image-name>:<custom-tag-name>
         ```
     4. Tag the image `docker tag ubuntu_custom:latest priyanshu00024/custom_base_ubuntu:v1`
+
         ```bash
         docker tag <image-name>:<tag> <dockerhub-username>/<repo-name>:<custom-tag-name>
         ```
     5. Then just push the image `docker push priyanshu00024/custom_base_ubuntu:v1`
+    
         ```bash
         docker push <dockerhub-username>/<repo-name>:<tag-name>
         ```
