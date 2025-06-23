@@ -2,7 +2,8 @@
 
 ## Images 
 
-* Set up for Ubuntu
+* Set up for Ubuntu.
+
     ```bash
     export DEBIAN_FRONTEND=noninteractive && \
     apt update && \
