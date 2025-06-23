@@ -57,10 +57,12 @@
 ## Containers
 
 * For starting a stoped container
+
     ```bash
     docker start <container-id>
     ```
 * Connect to that running container
+
     ```bash
     docker exec -it <container-id> /bin/bash
     ```
@@ -86,7 +88,7 @@
         docker tag <image-name>:<tag> <dockerhub-username>/<repo-name>:<custom-tag-name>
         ```
     5. Then just push the image `docker push priyanshu00024/custom_base_ubuntu:v1`
-    
+
         ```bash
         docker push <dockerhub-username>/<repo-name>:<tag-name>
         ```
