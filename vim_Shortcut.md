@@ -21,6 +21,13 @@
 - `b` in `ex` mode : move the pointer to previous word.
 - `(Press Ctrl + e)` : move the pointer one line up(next line) 
 - `(Press Ctrl + y)` : move the pointer one line down(previous line)
+-  in `ex` mode `yy` = `yank line` : Copies the entire current line, including the newline.
+-  in `ex` mode `3yy` : yank multiple lines, here 3.
+-  `p` : paste below the current line.
+-  `P` : paste above the current line. 
+
+
+
 
 ## Visual Block Mode
 1. Press `Ctrl+V` to enter visual block mode.
