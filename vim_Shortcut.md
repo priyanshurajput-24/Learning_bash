@@ -17,6 +17,10 @@
 - `Ctrl+b` : Scroll up by one full screen.
 - `:split <file name>` or `:sp <file name>` : Split the same window horizontally. Switch between splits via `Ctrl + ww`.
 - `:vs <file name>` : Vertically split the window.
+- `w` in `ex` mode : move the pointer to next word.
+- `b` in `ex` mode : move the pointer to previous word.
+- `(Press Ctrl + e)` : move the pointer one line up(next line) 
+- `(Press Ctrl + y)` : move the pointer one line down(previous line)
 
 ## Visual Block Mode
 1. Press `Ctrl+V` to enter visual block mode.
