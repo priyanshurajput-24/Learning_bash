@@ -214,3 +214,7 @@ Adds Cross-Origin Resource Sharing (CORS) middleware to a FastAPI app, allowing 
 ```bash
 git clone https://priyanshurajput-24@github.com/priyanshurajput-24/Learning_bash.git
 ```
+
+* If finding trouble in git push with different user account in same system then git clone with above `syntax` type of command, then try to push again. It will work.
+
+
